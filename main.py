@@ -1,3 +1,13 @@
+# --------------------------------------------- Scope ---------------------------------------------
+# This project was created to improve an existing functionality of another endeavor.
+# Currently, JSONs are read reasonably well, but several variables can be read and stored on a same file.
+
+# --------------------------------------- STEPS ---------------------------------------
+# 1) Read an existing JSON
+# 2) Create a "Cookie generator", where the user inputs a website, and it saves any cookies it creates.
+# 3) Save all cookies on a JSON, defining a way to recover these
+# 4) Save non-cookie variables on this file as well.
+
 # -------------------------------------------- Imports --------------------------------------------
 import json
 import time
@@ -49,5 +59,3 @@ def validate_cookies(path):
         with open(path + "/config/lastrun.json", 'w') as jsonfile:
             json.dump(data, jsonfile)
         return False
-
-
